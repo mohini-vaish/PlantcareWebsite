@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" href="http://www.budapestjobs.net/wp-content/uploads/company_logos/2018/09/PlanetPlanrIdentification.png">
+    <title>Plantcare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <!-- Image and text -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#" style="width:70%">
+            <img src="http://www.budapestjobs.net/wp-content/uploads/company_logos/2018/09/PlanetPlanrIdentification.png" width="40" height="40" class="d-inline-block align-top" alt="">  PLANTCARE</a>
+
+              <form class="form-inline">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search for products" aria-label="Search" >
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="cgi-bin/aboutus.py">About Us<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Site by Mohini Vaish</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+
+
+    <div id="banner">
+        <div class="form" >
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>Login</h2>
+                        <hr>
+                        <form action="cgi-bin/loginController.py" method="post">
+                            <div class="form-group">
+                                <label for="email_1">Email address</label>
+                                <input type="email" class="form-control form-control-sm" autocomplete="off" name="login_email" id="email_1" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control form-control-sm" name="login_pwd" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-success" >Submit</button>
+                        </form>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h2>Register</h2>
+                        <hr>
+                        <form action="cgi-bin/registerController.py" method="post">
+                            <div class="form-group">
+                                <label for="exampleInputName">Enter name</label>
+                                <input type="text" class="form-control form-control-sm " name="reg_name" id="exampleInputName" placeholder="Enter Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email_2">Email address</label>
+                                <input type="email" class="form-control form-control-sm" name="reg_email" id="email_2" placeholder="Enter email">
+                                <span class='d-block' id="msg"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword2">Password</label>
+                                <input type="password" class="form-control form-control-sm" name="reg_pwd" id="exampleInputPassword2" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputAddress2">Address</label>
+                                <input type="text" class="form-control form-control-sm" name="reg_address" id="exampleInputAddress2" placeholder="Address">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputmobile2">Mobile No.</label>
+                                <input type="text" class="form-control form-control-sm" name="reg_mobile" id="exampleInputmobile2" placeholder="MobileNo.">
+                            </div>
+                            <div class="form-group">
+                                <input type="radio" value="m" name="gender" id="m"> <label for="m">Male</label>
+                                <input type="radio" value="f" name="gender" id="f"> <label for="f">Female</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Register</button>
+                        </form>
+                    </div>
+                         <div class="col-md-4">
+                        <img class="b-block w-70" src="images/a.png" alt="First slide">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/1st.jpg" alt="First slide">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5 style="font:fira sans">"A beautiful plant is like having a friend around the house."</h5>
+                        <p style="color:yellow">-Beth Ditto</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/2nd.jpg" alt="Second slide">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5 style="font:fira sans">"Like people, plants respond to extra attention."</h5>
+                        <p style="color:yellow">-H.Peter Loewer</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/3rd.jpg" alt="Third slide">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5 style="font:fira sans">"He that plants trees, loves others besides himself."</h5>
+                        <p style="color:yellow">-Thomas Fuller</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            console.log("Jquery Loaded...");
+            $("#email_2").change(function() {
+                // console.log("Id changed...");
+                var value = $(this).val();
+                $.ajax({
+                    "url": 'http://localhost:12/cgi-bin/emailValidation.py?email=' + value,
+                    "success": function(data) {
+                        $("#msg").html(data);
+                    }
+                })
+            })
+        })
+    </script>
+
+</body>
+
+</html>
